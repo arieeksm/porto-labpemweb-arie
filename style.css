@@ -1,0 +1,376 @@
+/* style.css */
+/* 
+  Color Palette Sync:
+  Dark Teal: #2b6777
+  Light Blue: #c8d8e4
+  White: #ffffff
+  Light Gray: #f2f2f2
+  Mint Green: #52ab98
+*/
+
+section {
+  scroll-margin-top: 80px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  background-color: #f2f2f2; /* Swapped blanchedalmond for Light Gray */
+  color: #2b6777; /* Swapped brown for Dark Teal */
+  line-height: 1.6; /* Increased slightly for better readability */
+  margin: 0;
+  padding: 0;
+}
+
+/* Retained your glassmorphism aesthetic but synced to the new dark teal */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgba(43, 103, 119, 0.85); /* #2b6777 with 85% opacity */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(82, 171, 152, 0.4); /* #52ab98 border */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #52ab98; /* Mint Green hover state */
+}
+
+.brand-logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.brand-logo:hover {
+  color: #c8d8e4;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1,
+h2,
+h3 {
+  color: #2b6777;
+}
+
+.hero-details {
+  background-color: #c8d8e4;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  display: inline-block;
+  color: #2b6777;
+}
+
+.hero-details p {
+  margin: 0.5rem 0;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.portfolio-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(43, 103, 119, 0.08);
+  border-top: 4px solid #52ab98;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(43, 103, 119, 0.15);
+}
+
+.card-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #c8d8e4;
+  margin-bottom: 0.5rem;
+}
+
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  color: #52ab98;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.card-link:hover {
+  color: #2b6777;
+}
+
+.cta-section {
+  background-color: #2b6777;
+  color: #ffffff;
+  padding: 4rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(43, 103, 119, 0.2);
+}
+
+.cta-section h2 {
+  color: #c8d8e4;
+  margin-bottom: 0.5rem;
+}
+
+.cta-section p {
+  color: #f2f2f2;
+  font-size: 1.1rem;
+}
+
+.social-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.social-card {
+  background-color: #ffffff;
+  color: #2b6777;
+  text-decoration: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.social-card i {
+  font-size: 1.4rem;
+  color: #52ab98;
+  transition: color 0.3s ease;
+}
+
+/* Efek Hover yang Keren */
+.social-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  background-color: #52ab98;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(82, 171, 152, 0.4);
+}
+.site-footer .social-card:hover i {
+  color: #ffffff;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(43, 103, 119, 0.15);
+  color: #2b6777;
+}
+
+.site-footer p {
+  font-size: 0.95rem;
+  font-weight: 500;
+  opacity: 0.8;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.site-footer p:hover {
+  opacity: 1;
+  color: #52ab98;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .cta-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .social-card {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* --- Layout Grid About (Teks di Kiri, Slider di Kanan) --- */
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 260px; /* Lebar slider diperkecil dari 380px ke 260px */
+  gap: 2.5rem;
+  align-items: center;
+}
+
+/* --- Container Slider dengan Border Radius --- */
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 260px; /* Membatasi lebar maksimal bingkai */
+  justify-self: center; /* Memastikan posisi rapi di tengah kolomnya */
+}
+
+.photo-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 12px; /* Ukuran radius disesuaikan agar pas dengan bingkai lebih kecil */
+  box-shadow: 0 6px 18px rgba(43, 103, 119, 0.15);
+  background-color: #c8d8e4;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Sembunyikan scrollbar bawaan browser */
+.photo-slider::-webkit-scrollbar {
+  display: none;
+}
+.photo-slider {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Item Gambar di Dalam Slider (Tinggi diperkecil) */
+.slide-item {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 280px; /* Tinggi diperkecil dari 380px ke 280px */
+  scroll-snap-align: start;
+}
+
+.slide-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* --- Tombol Gulir / Indicator Dots --- */
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.slider-nav a {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #c8d8e4;
+  transition: all 0.3s ease;
+}
+
+.slider-nav a:hover {
+  background-color: #52ab98;
+  transform: scale(1.2);
+}
+
+/* --- Responsif untuk Layar HP (Media Query) --- */
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr; /* Tumpuk ke bawah saat dibuka di HP */
+  }
+
+  .slider-wrapper {
+    max-width: 220px; /* Lebih kecil lagi saat dibuka di layar HP */
+  }
+
+  .slide-item {
+    height: 240px;
+  }
+}
+
+/* --- Tombol Gulir / Indicator Dots --- */
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.slider-nav a {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #c8d8e4;
+  transition: all 0.3s ease;
+}
+
+.slider-nav a:hover {
+  background-color: #52ab98;
+  transform: scale(1.2);
+}

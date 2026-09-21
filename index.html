@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio - Pemweb</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Added FontAwesome for the card-link icons to render correctly -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-container">
+        <a href="#" class="brand-logo">Arie Ardinata Kusuma</a>
+        <nav class="nav-links" id="nav-menu">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <!-- Fixed missing closing tags for nav and div -->
+      </div>
+    </header>
+    <main>
+      <section id="about">
+        <div class="about-container">
+          <!-- Sisi Kiri: Teks Informasi -->
+          <div class="about-text">
+            <p>Hello everyone, I'm</p>
+            <h1>Arie Ardinata Kusuma</h1>
+
+            <div class="hero-details">
+              <div class="hero-details-content">
+                <div class="hero-details-text">
+                  <p><b>NIM:</b> 251401046</p>
+                  <p><b>Major:</b> Computer Science</p>
+                  <p>
+                    <b>Faculty:</b> Computer Science & Information Technology
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p class="hero-description">
+              Hi, i'm in the middle of web programming practice with Kak Umri
+              and building this portofolio web. <br />
+              頑張ってね Ganbatte ne 🔥
+            </p>
+          </div>
+
+          <!-- Sisi Kanan: Slider Foto (Rounded & Scroll Snap) -->
+          <div class="slider-wrapper">
+            <div class="photo-slider">
+              <div class="slide-item" id="slide-1">
+                <img src="foto1.jpg" alt="Foto 1" />
+              </div>
+              <div class="slide-item" id="slide-2">
+                <img src="foto2.jpeg" alt="Foto 2" />
+              </div>
+            </div>
+            <!-- Tombol Navigasi Slide -->
+            <div class="slider-nav">
+              <a href="#slide-1" aria-label="Slide 1"></a>
+              <a href="#slide-2" aria-label="Slide 2"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div>
+          <h2>My Skills</h2>
+          <!-- Fixed improper nesting of h2 and h4 -->
+          <ul>
+            <li>Basic HTML</li>
+            <li>Basic CSS</li>
+            <li>Basic JS</li>
+            <li>C/C++</li>
+            <li>Pascal</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="content-section">
+        <div id="title-porto">
+          <h2>My Projects</h2>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-card">
+            <div class="card-number">01</div>
+            <h3>Flipbook Aljabar Linear</h3>
+            <p>
+              Interactive learning media with dynamic page animation using HTML,
+              CSS, and JavaScript.
+            </p>
+            <a href="#" class="card-link"
+              >Lihat Proyek <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="card-number">02</div>
+            <h3>Aplikasi Manajer Catatan</h3>
+            <p>
+              An efficient data and records management system built with a
+              structured programming language.
+            </p>
+            <a href="#" class="card-link"
+              >Lihat Proyek <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="card-number">03</div>
+            <h3>Indie Novel Writing</h3>
+            <p>
+              Outside the IT world, I write novels as an outlet for my interest
+              and talent in literature.
+            </p>
+            <a href="#" class="card-link"
+              >Lihat Proyek <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="cta-section">
+        <h2>Let's stay connected</h2>
+        <p>Stay connected with me via the social media links below.</p>
+
+        <div class="social-grid">
+          <a
+            href="https://instagram.com/arieeksm_id"
+            target="_blank"
+            class="social-card"
+          >
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+
+          <a
+            href="https://github.com/arieeksm"
+            target="_blank"
+            class="social-card"
+          >
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/arieardinata-kusuma/"
+            target="_blank"
+            class="social-card"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+
+          <a href="mailto:arieardinatakusuma3@gmail.com" class="social-card">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email</span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>&copy 2026 Arie Ardinata Kusuma</p>
+    </footer>
+  </body>
+</html>
